@@ -19,13 +19,13 @@
     <div class="row">
         {% for product in  product_object %}
         <div class="col-md-3">
-            <div class="card m-3  ">
+            <div class="card m-3  c">
                 <img src="{{product.image}}" alt="" class="card-img-top">
-                <div class="card-body">
+                <div class="card-body corps">
                     <div id="aa{{ product.id }}" class="card-title">{{product.title}}</div>
                     <div id="price{{product.id}}" style="color:orangered" class="card-text">{{product.price}} Fcfa</div>
-                    <a href="{{product.id}}" class="btn btn-warning">Voire</a>
-                    <button id="{{product.id}}" class="btn ted  btn-success">Ajouter</button>
+                    <a href="{{product.id}}" class="btn btn-warning  vr">Voire</a>
+                    <button id="{{product.id}}" class="btn ted  btn-success aj">Ajouter</button>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
             }else{
                 quantite =1;
                 prix = parseFloat(document.getElementById("price"+item_id).innerHTML);
-                nom = document.getElementById("aa"+ item_id).innerHTML + `  Qte   :+ ${panier[quantite]} + </br>`;
+                nom = document.getElementById("aa"+ item_id).innerHTML + `   ${panier[quantite]} + </br>`;
                 panier[item_id]=[quantite,nom,prix];
                 
             }
