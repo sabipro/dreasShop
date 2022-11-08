@@ -31,7 +31,7 @@ DEBUG = False
 
 
 
-ALLOWED_HOSTS = ['https://lit-tundra-69383.herokuapp.com/ ','127.0.0.1']
+ALLOWED_HOSTS = ['https://lit-tundra-69383.herokuapp.com/ ']
 
 
 # Application definition
