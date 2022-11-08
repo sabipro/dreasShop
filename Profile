@@ -1,1 +1,1 @@
-web:gunicorn  ecommercesabi.wsgi --log-file
+web:gunicorn  ecommercesabi.wsgi :application --log-file -
