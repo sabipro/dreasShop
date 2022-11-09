@@ -7,7 +7,12 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Kim shop</title>
    
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200&family=Lobster&family=Patua+One&family=Roboto:ital,wght@1,700&family=Secular+One&display=swap" rel="stylesheet">
 
 
     <!--lien boostrap-->
@@ -23,14 +28,17 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="{% url 'home' %}">Kim-shop</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand " href="{% url 'home' %}">
+                      <img src="https://drive.google.com/file/d/1KQmTU8Ws8pZ7RBUaDQVwYLl9oQh-xFam/view?usp=share_link" alt="">
+                      KIM SHOP
+                    </a>
+                    <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="{% url 'home'%}">Accueil <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Produits</a>
+                        <a class="nav-item nav-link" href="">Produits</a>
                         <button id="panier" type="button" class="btn btn-secondary" data-container="body" data-html="true" data-toggle="popover" data-placement="bottom" data-content="Vivamus
 sagittis lacus vel augue laoreet rutrum faucibus.">
   Panier(0)
@@ -50,3 +58,52 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 {% block js %}
 {% endblock%}
 </html>
+<style>
+  body{
+font-family: 'Bebas Neue', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Secular One', sans-serif;
+  }
+  
+ .c{
+  background-color: #a7d1298d;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+ };
+ .corps{
+  background-color: black;
+ };
+.vr{
+  color: red;
+};
+.ch{
+  color: #a7d1298d;
+}
+.f{
+  padding: 5px;
+  background-color:#a7d1299c ;
+  margin-bottom: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.h{
+  background-color: #a7d1298d ;
+  color: black;
+  border-radius: 5px;
+ text-align: center;
+}
+.q{
+  background-color: #a7d1298d;
+  color: rgb(6, 6, 6) ;
+}
+.l{
+  color: rgba(11, 11, 11, 0.553);
+  text-align: center;
+}
+.conf{
+  color: #a7d1299c;
+  text-align: center;
+}
+</style>

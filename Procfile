@@ -1,0 +1,1 @@
+web: gunicorn ecommercesabi.wsgi --log-file -
